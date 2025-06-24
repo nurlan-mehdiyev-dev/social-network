@@ -1,5 +1,5 @@
 function Sabina() {
-  return <div> Sabina</div>;
+  return <div>Меня зовут Sabina</div>;
 }
 
 export default Sabina;
