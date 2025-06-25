@@ -5,7 +5,7 @@ import { Route, Routes } from 'react-router'
 import MainPage from './pages/mainPage/MainPage'
 import Messages from './pages/messages/Messages'
 import NotFoundPage from './pages/notFoundPage/NotFoundPage'
-import Jamal from './components/Jamal'
+import Jamal from './components/jamal/Jamal'
 
 function App() {
 
@@ -20,7 +20,7 @@ function App() {
         <Route path='/*' element={<NotFoundPage />} />
       </Routes>
       <Jamal />
-
+      
     </>
   )
 }
