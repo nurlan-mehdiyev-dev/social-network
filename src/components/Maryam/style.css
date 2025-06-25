@@ -8,3 +8,8 @@ div {
     height: 300px;
     box-shadow: 5%;
 }
+
+img {
+    width: 100%;
+    height: auto;
+}
