@@ -4,7 +4,7 @@ export default function Jamal() {
     return (
         <div className={styles.Jamal}>
             <header className={styles.title}>
-                <h2>header</h2>
+                <h2>Jamal's header</h2>
             </header>
 
             <main className={styles.image}>
