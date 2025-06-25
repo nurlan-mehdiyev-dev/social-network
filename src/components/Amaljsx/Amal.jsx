@@ -1,5 +1,7 @@
+import style from "./amal.module.scss"
+
 return function AmalJsx(){
     return(
-        <h1>Amal</h1>
+        <h1 className={style.title}>Amal</h1>
     )
 }
