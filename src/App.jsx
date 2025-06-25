@@ -6,12 +6,13 @@ import MainPage from './pages/mainPage/MainPage'
 import Messages from './pages/messages/Messages'
 import NotFoundPage from './pages/notFoundPage/NotFoundPage'
 import Jamal from './components/Jamal'
+import Davud from './components/Davud/davud'
 
 function App() {
 
   return (
     <>
-
+    <Davud/>
       <Routes>
         <Route path="/" element={<Layout />} >
           <Route index element={<MainPage />} />
