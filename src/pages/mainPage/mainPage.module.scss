@@ -1,5 +1,14 @@
 .main {}
+.story{
+    background-color: blue;
+    height: 20px;
+}
 
+.content{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    gap: 10px;
+}
 .posts {
     margin: 0 auto;
     max-width: 800px;

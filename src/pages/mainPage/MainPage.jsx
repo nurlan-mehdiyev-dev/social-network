@@ -13,43 +13,53 @@ export default function MainPage() {
     }, [])
     return (
         <main className={styles.main}>
-            <header>
-                <div>
-                    story
+
+            <div className={styles.story}>
+                story
+            </div>
+
+            <div className={styles.content}>
+                <div className="aside_left">
+                    aside left
                 </div>
-            </header>
+                <section className={styles.posts}>
+                    {posts.map((post) => {
+                        return (
+                            <article className={styles.post}>
+                                <div>{post.author}</div>
+                                <div>
+                                    <SimpleSlider images={post.images} />
+                                </div>
+                                <div>
 
-            <section className={styles.posts}>
-                {posts.map((post) => {
-                    return (
-                        <article className={styles.post}>
-                            <div>{post.author}</div>
-                            <div>
-                                <SimpleSlider images={post.images} />
-                            </div>
-                            <div>
+                                    {
+                                        post.comments.map((comment) => {
+                                            return (
+                                                <div>
+                                                    <span>{comment.author}:</span><span> {comment.text}</span>
+                                                </div>
+                                            )
+                                        })
+                                    }
+                                </div>
+                                <div>
+                                    ❤️ <br />
+                                    likes {post.likes}
+                                </div>
 
-                               {
-                                    post.comments.map((comment) => {
-                                        return (
-                                            <div>
-                                                <span>{comment.author}:</span><span> {comment.text}</span>
-                                            </div>
-                                        )
-                                    })
-                                } 
-                            </div>
-                            <div>
-                                ❤️ <br />
-                                likes {post.likes}
-                            </div>
-
-                        </article>
-                    )
-                })}
+                            </article>
+                        )
+                    })}
 
 
-            </section>
+                </section>
+                <aside className="aside_right">
+                    aside right
+                </aside>
+            </div>
+
+
+
 
         </main>
     );

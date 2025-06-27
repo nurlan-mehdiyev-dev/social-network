@@ -6,17 +6,22 @@ import { Outlet } from "react-router"
 function Layout() {
 
   return (
-    <div className={styles.container}>
-      <aside>
-        <Navigation />
-      </aside>
-      <main>
-        <Outlet/>
-      </main>
-      <aside>
-        aside
-      </aside>
+    <div>
+      <header className={styles.header}>
+        header
+      </header>
+      <div className={styles.container}>
+        <aside>
+          <Navigation />
+        </aside>
+       
+        <main>
+          <Outlet />
+        </main>
+       
+      </div>
     </div>
+
   )
 }
 
