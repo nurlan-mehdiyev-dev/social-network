@@ -7,7 +7,7 @@ import Messages from './pages/messages/Messages'
 import NotFoundPage from './pages/notFoundPage/NotFoundPage'
 import Profile from './pages/profile/Profile'
 import ProfileLayout from './components/profile-layout/ProfileLayout'
-import Notifications from './pages/notifications/Notifications'
+import Notifications from './components/notifications/Notifications'
 
 
 function App() {
