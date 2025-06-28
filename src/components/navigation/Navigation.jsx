@@ -13,7 +13,7 @@ export default function Navigation() {
         <div className={style.navigation}>
             <nav>
                 <li>
-                    <span onClick={toggleMenu} style={{ cursor: "pointer" }}>
+                    <span onClick={toggleMenu}>
                         <img className={style.menu} src="https://cdn-icons-png.flaticon.com/128/15682/15682780.png" alt="menu"
                         />
                     </span>
