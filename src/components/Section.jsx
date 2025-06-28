@@ -1,6 +1,5 @@
-export default
 
-function A() {
+function A () {
   return <div>a</div>;
 }
 
